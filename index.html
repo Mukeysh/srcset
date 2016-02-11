@@ -8,17 +8,26 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
+    <script>
+    
+    document.createElement( "picture" );
+      </script>
+      <script src="picturefill.js" async></script>
   </head>
   <body>
-<img alt="robots" src="desktop_Slide01.jpg"
-  srcset="mobile_hero_TiVoBolt.jpg 480w, tablet_heroTivoBolt.jpg 768w, tablet_heroTivoBolt.jpg 1024w, desktop_Slide01.jpg 1200w">
-  <picture>
-        <source srcset="kitten-small.png, brain-mobile-x.jpg 2x">
-        <source srcset="kitten-medium.png" media="(min-width: 480px)"></source>
-        <source srcset="kitten-large.png" media="(min-width: 1024px)"></source>
-        <!-- img tag for browsers that do not support picture element -->
+<!-- <img alt="robots" src="desktop_Slide01.jpg"
+  srcset="mobile_hero_TiVoBolt.jpg 480w, tablet_heroTivoBolt.jpg 768w, tablet_heroTivoBolt.jpg 1024w, desktop_Slide01.jpg 1200w"> -->
+  <!-- <picture>
+        <source srcset="kitten-small.png">
+        <source srcset="kitten-medium.png" media="(min-width: 600px)">
+        <source srcset="kitten-large.png" media="(min-width: 1024px)">
+        img tag for browsers that do not support picture element
         <img alt="a cute kitten" src="kitten-small.png">
-      </picture>  
+  </picture>  -->
+      <picture>
+        <source srcset="kitten-large.png" media="(min-width: 1025px)">
+        <source srcset="kitten-medium.png" media="(min-width: 768px)">
+        <img srcset="kitten-small.png" alt="…">
+      </picture>
   </body>
 </html>
-
