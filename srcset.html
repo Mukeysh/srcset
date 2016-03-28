@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<picture>
+<source srcset="03_mobile_Hero_390_24.jpg" media="(max-width: 480px)" />
+<source srcset="02_tablet_Hero_390_24.jpg" media="(min-width: 481px) and (max-width: 768px)" />
+<img class="lazyload" srcset="01_desktop_Hero_390_24.jpg" alt="hero"/></picture>
+
+
+<picture>
+<source srcset="01_mobile_UES_content_sources_3.jpg" media="(max-width: 480px)" />
+<source srcset="01_tablet_UES_content_sources_3.jpg" media="(min-width: 481px) and (max-width: 768px)" />
+<img class="lazyload" data-srcset="01_desktop_UES_content_sources_5.jpg" alt="SkipMode"/></picture>
+
+
+<picture>
+<source srcset="04_mobile_UES_unified_search_18.jpg" media="(max-width: 480px)" />
+<source srcset="04_tablet_UES_unified_search_18.jpg" media="(min-width: 481px) and (max-width: 768px)" />
+<img class="lazyload" data-srcset="04_desktop_UES_unified_search_18.jpg" alt="SkipMode" /></picture>
+
+
+<picture>
+<source srcset="05_mobile_UES_unified_watchlist_18.jpg" media="(max-width: 480px)" />
+<source srcset="05_tablet_UES_unified_watchlist_18.jpg" media="(min-width: 481px) and (max-width: 768px)" />
+<img class="lazyload" data-srcset="05_desktop_UES_unified_watchlist.jpg" alt="SkipMode" /></picture>
+
+
+
+<picture>
+    <!--[if IE 9]><video style="display: none;><![endif]-->
+    <source
+        data-srcset="-text (2).png"
+        media="(max-width: 480px)" />
+    <source
+        data-srcset="-text (1).png"
+        media="(min-width: 481px) and (max-width: 768px)" />
+    <img
+        data-src="-text.png"
+        class="lazyload"
+        alt="image with artdirection" />
+</picture>
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_mobile_performance_imgBolt_v2.jpg" media="(max-width: 479px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_tablet_performance_imgBolt_v2.jpg" media="(min-width: 480px) and (max-width:768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/bd_desktop_performance_imgBolt_v2.jpg" class="bolt333_img" alt="TiVo BOLT DVR" class="lazyload"/></picture>
+
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_mobile_performance_imgSkipMode_v2.jpg" media="(max-width: 479px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_tablet_performance_imgSkipMode.jpg" media="(min-width: 480px) and (max-width:768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/bd_desktop_performance_imgSkipMode.jpg" alt="SkipMode" class="lazyload"/></picture>
+
+
+ <picture><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_mobile_performance_imgQuickMode.jpg" media="(max-width: 479px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_tablet_performance_imgQuickMode.jpg" media="(min-width: 480px) and (max-width:768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/bd_desktop_performance_imgQuickMode.jpg" alt="QuickMode" class="lazyload"/></picture>
+
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_mobile_performance_imgRemote.jpg" media="(max-width: 479px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_tablet_performance_imgRemote.jpg" media="(min-width: 480px) and (max-width:768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/bd_desktop_performance_imgRemote_v2.jpg" class="lazyload" alt="TiVo Remote" /></picture>
+
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_mobile_performance_imgBackofBolt_v2.jpg" media="(max-width: 479px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/bd_tablet_performance_imgBackofBolt_v2.jpg" media="(min-width: 480px) and (max-width:768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/bd_desktop_performance_imgBackofBolt_v2.jpg" class="lazyload" alt="TiVo BOLT back panel" /></picture>
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/01_mobile_slide01_mini.jpg" media="(max-width: 480px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/01_tablet_slide01_mini.jpg" media="(min-width: 481px) and (max-width: 768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/01_desktop_slide01_mini.jpg" class="lazyload" alt="TiVo BOLT back panel" /></picture>
+
+<picture><source srcset="https://www-qas.tivo.com/assets/images_assets/02_mobile_slide02_minisnBolt.png" media="(max-width: 480px)"><source srcset="https://www-qas.tivo.com/assets/images_assets/02_tablet_slide02_minisnBolt.png" media="(min-width: 481px) and (max-width: 768px)"><img data-src="https://www-qas.tivo.com/assets/images_assets/02_desktop_slide02_minisnBolt.jpg" class="lazyload" alt="mini bolt" /></picture>
+
+<style>
+.lazyload {
+	opacity: 0;
+	transform: scale(0.8);
+}
+
+.lazyloaded {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 700ms;
+}
+</style>
+
+<script>
+
+window.lazySizesConfig = {
+	addClasses: true
+};
+</script>
+<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+<script src="picture.js"></script>
+<script type="text/javascript"> 
+$( document ).ready(function() {
+    document.createElement( "picture" );
+});
+</script>
+<script src="lazysizes.min.js" async=""></script>
+</body>
+</html>
